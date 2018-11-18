@@ -1,0 +1,75 @@
+/* DashboardComponent's private CSS styles */
+[class*='col-'] {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+  a {
+    text-decoration: none;
+    display:inline-block;
+    color: #eee;
+ }
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  h3 {
+    text-align: center; margin-bottom: 0;
+  }
+  h4 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+ .Dash {
+    display: inline-block;
+    width:25%;
+    height:60px;
+    padding-bottom: 10px;
+    margin: 20px 20px !important;
+    border:1px solid #607D8B !important;
+    background: #607D8B !important;
+    text-align: center !important;
+    font-size: 19px !important;
+ }
+ .Dash:hover {
+    background: rgb(119, 124, 123) !important;
+}
+  
+input {
+    margin-top:20px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.search {
+    margin-left: 10px;
+    height: 40px;
+    border:1px solid rgb(53, 62, 73);
+    background: rgb(53, 62, 73);
+    color: white;
+}
+.search:hover{
+    background: rgb(102, 128, 160);
+}
+
+.viewRec {
+    margin:20px 0px;
+    height: 40px;
+    border:1px solid rgb(53, 62, 73);
+    background: rgb(53, 62, 73);
+    color: white; 
+}
+.err {
+    color: red;
+    font-weight: bold;
+}
+
+.viewRec:hover{
+    background: rgb(102, 128, 160);
+}
+
+  

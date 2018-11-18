@@ -1,0 +1,23 @@
+
+<div class="Dash">
+<a class="col-1-4"
+    routerLink="/dashboard">
+      <h4>Dashboard</h4>
+  </a>
+</div>
+<div>
+<input type="text" #device_id name="str"/>
+<button class="search" (click)="search_device(device_id.value)">Search Device</button>
+</div>
+<div *ngIf="device_info">
+  <div>
+  <p><b>Device_id : </b>{{device_info.actual_device_id}}</p>
+  <p><b>User Name : </b>{{device_info.user_name}}</p>
+  <p><b>Device Bought at :</b> {{device_info.device_bought_at | date:'medium'}}</p>
+</div>
+<div>
+  <button class="viewRec" routerLink="/draw_chart/{{device_info.actual_device_id}}/hour">View Device records</button>
+</div>
+</div>
+
+<div class="err" *ngIf="errorMessageDevice">{{ errorMessageDevice }}</div>

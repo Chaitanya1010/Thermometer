@@ -1,0 +1,28 @@
+<div class="grid">
+    <a class="col-1-4"
+routerLink="/dashboard">
+  <h4>Dashboard</h4>
+</a>
+<a class="col-1-4" routerLink="/view_records"><h4>Go Back</h4></a>
+</div>
+<h2>{{title}}</h2>
+
+<div *ngIf="time_given==='hour'"> 
+    <button class="timebtn" (click)='load_day_info()'>View last day records</button>
+    <button class="timebtn" (click)='load_month_info()'>View last month records</button>
+</div>
+
+<div *ngIf="time_given==='day'"> 
+    <button class="timebtn" (click)='load_hour_info()'>View last hour records</button>
+    <button class="timebtn" (click)='load_month_info()'>View last month records</button>
+</div>
+
+<div *ngIf="time_given==='month'"> 
+    <button class="timebtn" (click)='load_hour_info()'>View last hour records</button>
+    <button class="timebtn" (click)='load_day_info()'>View last day records</button>
+</div>
+
+        
+<div>
+    <canvas id="canvas">{{ chart }}</canvas>
+</div>

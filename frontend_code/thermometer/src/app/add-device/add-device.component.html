@@ -1,0 +1,23 @@
+<div><a class="col-1-4"
+    routerLink="/dashboard">
+      <h4>Dashboard</h4>
+    </a>
+</div>
+    <h2>{{title}}</h2>
+    
+<div *ngIf="!successfulMessageInsertion">
+    <input type="text" placeholder="Owner Name" #owner_name name="str"/><br>
+    <input type="text" placeholder="Device id" #device_id name="str"/><br>
+    <button class="search" (click)="add_device(device_id.value,owner_name.value)">Add device</button>
+</div>
+
+<div *ngIf="successfulMessageInsertion">
+    <p>{{successfulMessageInsertion}}</p>
+    <button class="search" (click)="add_records_to_device()">Add Records from device</button>
+</div>        
+
+<div class="err" *ngIf="errorMessageInsertion">{{errorMessageInsertion}}</div>
+
+<div *ngIf="successfulMessageInsertion_1"><p>{{successfulMessageInsertion_1}}</p></div>
+
+

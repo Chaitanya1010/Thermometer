@@ -1,0 +1,47 @@
+.col-1-4 {
+    display: inline-block;
+    width:25%;
+    height:60px;
+    padding-bottom: 10px;
+    margin: 20px 20px !important;
+    border:1px solid #607D8B !important;
+    background: #607D8B !important;
+    color:white;
+    text-align: center !important;
+    font-size: 19px !important;
+}
+a {
+    text-decoration: none;
+}
+.col-1-4:hover{
+    background: rgb(119, 124, 123) !important;
+}
+
+input {
+        margin-top:15px;
+        margin-bottom: 15px;
+        height: 33px;
+}
+
+.search {
+    width:10%;
+    margin-left: 10px;
+    height: 40px;
+    border:1px solid rgb(53, 62, 73);
+    background: rgb(53, 62, 73);
+    color: white;
+}
+.search:hover{
+    background: rgb(102, 128, 160);
+}
+
+p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.err {
+    font-weight: bold;
+    color:red;
+    font-size: 18px;
+}
